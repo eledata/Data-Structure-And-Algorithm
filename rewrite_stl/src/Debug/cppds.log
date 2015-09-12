@@ -1,0 +1,131 @@
+﻿生成启动时间为 2015/8/18 23:50:48。
+     1>项目“D:\GitHub\AF_ALGO\AF_STL\src\cppds.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt cdsalgorithm_test.cpp consumetimecmp.cpp cppcds_heap_test.cpp cppcds_iterator_test.cpp cppcds_list_test.cpp cppcds_numeric_test.cpp cppcds_pair_test.cpp cppcds_vector_test.cpp High_Time.cpp test.cpp
+         test.cpp
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xkeycheck.h(197): warning C4005: “false”: 宏重定义
+         d:\github\af_algo\af_stl\src\cppcds_config.h(17): note: 参见“false”的前一个定义
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xkeycheck.h(232): warning C4005: “true”: 宏重定义
+         d:\github\af_algo\af_stl\src\cppcds_config.h(16): note: 参见“true”的前一个定义
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xkeycheck.h(250): fatal error C1189: #error:  The C++ Standard Library forbids macroizing keywords. Enable warning C4005 to find the forbidden macro.
+         High_Time.cpp
+     1>d:\github\af_algo\af_stl\src\high_time.cpp(25): warning C4244: “=”: 从“LONGLONG”转换到“double”，可能丢失数据
+         cppcds_vector_test.cpp
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xkeycheck.h(197): warning C4005: “false”: 宏重定义
+         d:\github\af_algo\af_stl\src\cppcds_config.h(17): note: 参见“false”的前一个定义
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xkeycheck.h(232): warning C4005: “true”: 宏重定义
+         d:\github\af_algo\af_stl\src\cppcds_config.h(16): note: 参见“true”的前一个定义
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xkeycheck.h(250): fatal error C1189: #error:  The C++ Standard Library forbids macroizing keywords. Enable warning C4005 to find the forbidden macro.
+         cppcds_pair_test.cpp
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xkeycheck.h(197): warning C4005: “false”: 宏重定义
+         d:\github\af_algo\af_stl\src\cppcds_config.h(17): note: 参见“false”的前一个定义
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xkeycheck.h(232): warning C4005: “true”: 宏重定义
+         d:\github\af_algo\af_stl\src\cppcds_config.h(16): note: 参见“true”的前一个定义
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xkeycheck.h(250): fatal error C1189: #error:  The C++ Standard Library forbids macroizing keywords. Enable warning C4005 to find the forbidden macro.
+         cppcds_numeric_test.cpp
+         cppcds_list_test.cpp
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xkeycheck.h(197): warning C4005: “false”: 宏重定义
+         d:\github\af_algo\af_stl\src\cppcds_config.h(17): note: 参见“false”的前一个定义
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xkeycheck.h(232): warning C4005: “true”: 宏重定义
+         d:\github\af_algo\af_stl\src\cppcds_config.h(16): note: 参见“true”的前一个定义
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xkeycheck.h(250): fatal error C1189: #error:  The C++ Standard Library forbids macroizing keywords. Enable warning C4005 to find the forbidden macro.
+         cppcds_iterator_test.cpp
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xkeycheck.h(197): warning C4005: “false”: 宏重定义
+         d:\github\af_algo\af_stl\src\cppcds_config.h(17): note: 参见“false”的前一个定义
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xkeycheck.h(232): warning C4005: “true”: 宏重定义
+         d:\github\af_algo\af_stl\src\cppcds_config.h(16): note: 参见“true”的前一个定义
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xkeycheck.h(250): fatal error C1189: #error:  The C++ Standard Library forbids macroizing keywords. Enable warning C4005 to find the forbidden macro.
+         cppcds_heap_test.cpp
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xkeycheck.h(197): warning C4005: “false”: 宏重定义
+         d:\github\af_algo\af_stl\src\cppcds_config.h(17): note: 参见“false”的前一个定义
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xkeycheck.h(232): warning C4005: “true”: 宏重定义
+         d:\github\af_algo\af_stl\src\cppcds_config.h(16): note: 参见“true”的前一个定义
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xkeycheck.h(250): fatal error C1189: #error:  The C++ Standard Library forbids macroizing keywords. Enable warning C4005 to find the forbidden macro.
+         consumetimecmp.cpp
+         cdsalgorithm_test.cpp
+     1>d:\github\af_algo\af_stl\src\cppcds_uninitialized.h(48): error C3861: “memmove”: 找不到标识符
+     1>d:\github\af_algo\af_stl\src\cppcds_uninitialized.h(55): error C3861: “memmove”: 找不到标识符
+     1>d:\github\af_algo\af_stl\src\cppcds_algobase.h(168): error C3861: “memset”: 找不到标识符
+     1>d:\github\af_algo\af_stl\src\cppcds_algobase.h(174): error C3861: “memset”: 找不到标识符
+     1>d:\github\af_algo\af_stl\src\cppcds_algobase.h(180): error C3861: “memset”: 找不到标识符
+     1>d:\github\af_algo\af_stl\src\cppcds_algo.h(564): error C2061: 语法错误: 标识符“_cppcds_unique”
+     1>d:\github\af_algo\af_stl\src\cppcds_algo.h(581): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+     1>d:\github\af_algo\af_stl\src\cppcds_algo.h(581): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+     1>d:\github\af_algo\af_stl\src\cppcds_algo.h(614): error C2061: 语法错误: 标识符“_cppcds_unique”
+     1>d:\github\af_algo\af_stl\src\cppcds_algo.h(631): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+     1>d:\github\af_algo\af_stl\src\cppcds_algo.h(631): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+     1>c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\corecrt_memcpy_s.h(50): error C3861: “memset”: 找不到标识符
+     1>c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\corecrt_memcpy_s.h(59): error C3861: “memcpy”: 找不到标识符
+     1>c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\corecrt_memcpy_s.h(80): error C3861: “memmove”: 找不到标识符
+     1>c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\corecrt_memory.h(104): error C2664: “void *memchr(void *,int,size_t)”: 无法将参数 1 从“const void *const ”转换为“void *”
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\corecrt_memory.h(104): note: 转换丢失限定符
+     1>c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\corecrt_wstring.h(534): error C2664: “wchar_t *wcschr(wchar_t *,wchar_t)”: 无法将参数 1 从“const wchar_t *”转换为“wchar_t *”
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\corecrt_wstring.h(534): note: 转换丢失限定符
+     1>c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\corecrt_wstring.h(546): error C2664: “wchar_t *wcsrchr(wchar_t *,wchar_t)”: 无法将参数 1 从“const wchar_t *”转换为“wchar_t *”
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\corecrt_wstring.h(546): note: 转换丢失限定符
+     1>c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\corecrt_wstring.h(553): error C2664: “wchar_t *wcsstr(wchar_t *,const wchar_t *)”: 无法将参数 1 从“const wchar_t *”转换为“wchar_t *”
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\corecrt_wstring.h(553): note: 转换丢失限定符
+     1>c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(519): error C2664: “char *strchr(char *const ,const int)”: 无法将参数 1 从“const char *”转换为“char *const ”
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(519): note: 转换丢失限定符
+     1>c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(531): error C2664: “char *strrchr(char *const ,const int)”: 无法将参数 1 从“const char *”转换为“char *const ”
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(531): note: 转换丢失限定符
+     1>c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(537): error C2664: “char *strstr(char *const ,const char *const )”: 无法将参数 1 从“const char *”转换为“char *const ”
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(537): note: 转换丢失限定符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\cstring(18): error C2039: “memcmp”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\cstring(18): error C2873: “memcmp”: 符号不能用在 using 声明中
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\cstring(19): error C2039: “memcpy”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\cstring(19): error C2873: “memcpy”: 符号不能用在 using 声明中
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\cstring(19): error C2039: “memmove”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\cstring(19): error C2873: “memmove”: 符号不能用在 using 声明中
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\cstring(19): error C2039: “memset”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\cstring(19): error C2873: “memset”: 符号不能用在 using 声明中
+     1>c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\wchar.h(234): error C3861: “memcpy”: 找不到标识符
+     1>c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\wchar.h(247): error C3861: “memmove”: 找不到标识符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\iosfwd(518): error C2039: “memcmp”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\iosfwd(518): error C3861: “memcmp”: 找不到标识符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\iosfwd(531): error C2039: “memcpy”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\iosfwd(531): error C3861: “memcpy”: 找不到标识符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\iosfwd(547): error C2664: “void *memchr(void *,int,size_t)”: 无法将参数 1 从“const std::char_traits<char>::_Elem *”转换为“void *”
+         d:\program files (x86)\microsoft visual studio 14.0\vc\include\iosfwd(547): note: 转换丢失限定符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\iosfwd(554): error C2039: “memmove”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\iosfwd(554): error C3861: “memmove”: 找不到标识符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\iosfwd(560): error C2039: “memset”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\iosfwd(560): error C3861: “memset”: 找不到标识符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2701): error C2039: “memset”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2701): error C3861: “memset”: 找不到标识符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2706): error C2039: “memset”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2706): error C3861: “memset”: 找不到标识符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2711): error C2039: “memset”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2711): error C3861: “memset”: 找不到标识符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2735): error C2039: “memset”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2735): error C3861: “memset”: 找不到标识符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2742): error C2039: “memset”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2742): error C3861: “memset”: 找不到标识符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2749): error C2039: “memset”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2749): error C3861: “memset”: 找不到标识符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2843): error C2039: “memcmp”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2843): error C3861: “memcmp”: 找不到标识符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2849): error C2039: “memcmp”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2849): error C3861: “memcmp”: 找不到标识符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2855): error C2039: “memcmp”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2855): error C3861: “memcmp”: 找不到标识符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(3012): error C2039: “memcmp”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(3012): error C3861: “memcmp”: 找不到标识符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xlocale(1737): error C2039: “memcpy”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xlocale(1737): error C3861: “memcpy”: 找不到标识符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xlocale(1763): error C2039: “memcpy”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xlocale(1763): error C3861: “memcpy”: 找不到标识符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xlocale(1971): error C2039: “memcpy”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xlocale(1971): error C3861: “memcpy”: 找不到标识符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xlocale(1997): error C2039: “memcpy”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xlocale(1997): error C3861: “memcpy”: 找不到标识符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xlocale(2547): error C2039: “memcpy”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xlocale(2547): error C3861: “memcpy”: 找不到标识符
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xlocale(2560): error C2039: “memcpy”: 不是“`global namespace'”的成员
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\xlocale(2560): error C3861: “memcpy”: 找不到标识符
+         正在生成代码...
+     1>已完成生成项目“D:\GitHub\AF_ALGO\AF_STL\src\cppds.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:02.83
