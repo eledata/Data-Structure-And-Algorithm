@@ -1,0 +1,7 @@
+00:31:05 **** Incremental Build of configuration Debug for project Intro_Algo ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Dynamic_Matrix_Chain.o" "..\\src\\Dynamic_Matrix_Chain.cpp" 
+g++ -o Intro_Algo.exe "src\\Dynamic_Matrix_Chain.o" "src\\Dynamic_Assembly_Line_Schedule.o" 
+
+00:31:05 Build Finished (took 591ms)
+

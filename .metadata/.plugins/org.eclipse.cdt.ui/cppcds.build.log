@@ -1,0 +1,5 @@
+23:47:32 **** Clean-only build of configuration Debug for project cppcds ****
+rm -rf src/cppcds_list_test.d src/cdsalgorithm_test.o src/cppcds_heap_test.o src/cppcds_pair_test.o src/cppcds_list_test.o src/test.o cppcds.exe src/cppcds_pair_test.d src/cppcds_heap_test.d src/test.d src/cppcds_vector_test.d src/consumetimecmp.o src/cppcds_iterator_test.d src/cppcds_numeric_test.d src/consumetimecmp.d src/cppcds_vector_test.o src/High_Time.o src/cppcds_numeric_test.o src/cdsalgorithm_test.d src/High_Time.d src/cppcds_iterator_test.o 
+
+23:47:32 Build Finished (took 155ms)
+
