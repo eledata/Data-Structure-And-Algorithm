@@ -1,7 +1,0 @@
-22:30:53 **** Incremental Build of configuration Debug for project cddcds ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\cddcds.o" "..\\src\\cddcds.cpp" 
-g++ -o cddcds.exe "src\\cddcds.o" 
-
-22:30:54 Build Finished (took 594ms)
-

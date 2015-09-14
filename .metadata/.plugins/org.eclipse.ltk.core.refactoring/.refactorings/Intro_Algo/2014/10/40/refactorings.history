@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Intro_Algo/src/Dynamic_Assembly_Line_Schedule&apos; to &apos;Dynamic_Assembly_Line_Schedule.cpp&apos;" description="Rename resource &apos;Dynamic_Assembly_Line_Schedule&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Dynamic_Assembly_Line_Schedule" name="Dynamic_Assembly_Line_Schedule.cpp" stamp="1412254599231" updateReferences="true"/>
-</session>
