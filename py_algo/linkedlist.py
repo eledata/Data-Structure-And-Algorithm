@@ -47,7 +47,7 @@ class LinkedList(object):
                     pre = pre._next
                 pre._next = tmp
                 
-            
+        def extract(self):
             
             
             
