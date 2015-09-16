@@ -23,3 +23,5 @@ class ContainerEmpty(StateError):
 class ContainerFull(StateError):
     pass
 
+class MethodNotImplemented(Exception):
+    pass
