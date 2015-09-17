@@ -15,7 +15,7 @@ class Stack(Container):
         
     @abstractmethod
     def gettop(self): pass
-    top = property(fget = lambda self: self.getop())
+    top = property(fget = lambda self: self.gettop())
     
     @abstractmethod
     def push(self, obj): pass

@@ -32,7 +32,7 @@ class Container(Object):
     
     def getisfull(self):
         return False
-    isfull = property(fget = lambda self: self.getifull())
+    isfull = property(fget = lambda self: self.getisfull())
     
     def accept(self, visitor):
         assert isinstance(visitor, Visitor)

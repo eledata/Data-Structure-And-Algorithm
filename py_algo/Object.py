@@ -23,7 +23,7 @@ class Object(object):
         else:
             return cmp(self.__class__.__name__, obj.__class__.__name__)
     @abstractmethod
-    def _compareTo(self, obj): pass
+    def _compareto(self, obj): pass
     
     __metaclass__ = Metaclass
         
