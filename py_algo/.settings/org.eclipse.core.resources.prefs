@@ -1,8 +1,10 @@
 eclipse.preferences.version=1
+encoding//tests/t_array.py=utf-8
 encoding//tests/t_linkedlist.py=utf-8
 encoding//tests/t_stacklaslinkedlist.py=utf-8
 encoding/Object.py=utf-8
 encoding/abstractmethod.py=utf-8
+encoding/array.py=utf-8
 encoding/container.py=utf-8
 encoding/exception.py=utf-8
 encoding/iterator.py=utf-8
