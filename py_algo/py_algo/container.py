@@ -7,9 +7,9 @@ Created on Sep 16, 2015
 '''
 
 import sys
-from abstractmethod import abstractmethod
-from Object import Object
-from visitor import Visitor
+from py_algo.abstractmethod import abstractmethod
+from py_algo.object import Object
+from py_algo.visitor import Visitor
 
 class Container(Object):
     def __init__(self):

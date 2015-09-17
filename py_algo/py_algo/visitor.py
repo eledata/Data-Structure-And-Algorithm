@@ -6,8 +6,8 @@ Created on Sep 16, 2015
 @author: MHuang1
 '''
 import sys
-from Object import Object
-from exception import MethodNotImplemented
+from py_algo.object import Object
+from py_algo.exception import MethodNotImplemented
 
 class Visitor(Object):
     def __init__(self):

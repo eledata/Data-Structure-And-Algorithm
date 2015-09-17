@@ -7,11 +7,11 @@ Created on Sep 16, 2015
 '''
 import sys
 
-from stack import Stack
-from linkedlist import LinkedList
-from visitor import Visitor
-from iterator import Iterator
-from exception import *
+from py_algo.stack import Stack
+from py_algo.linkedlist import LinkedList
+from py_algo.visitor import Visitor
+from py_algo.iterator  import Iterator
+from py_algo.exception import *
 
 class StackAsLinkedList(Stack):
     def __init__(self):

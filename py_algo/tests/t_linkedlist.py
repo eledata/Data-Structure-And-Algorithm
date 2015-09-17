@@ -8,7 +8,7 @@ Created on Sep 15, 2015
 import unittest
 from unittest import TestCase
 
-from linkedlist import LinkedList
+from py_algo.linkedlist import LinkedList
 from copy import copy
 
 class T_LinkList(TestCase):

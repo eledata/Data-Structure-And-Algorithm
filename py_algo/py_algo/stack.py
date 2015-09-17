@@ -6,8 +6,8 @@ Created on Sep 16, 2015
 @author: MHuang1
 '''
 
-from abstractmethod import abstractmethod
-from container import Container
+from py_algo.abstractmethod import abstractmethod
+from py_algo.container import Container
 
 class Stack(Container):
     def __init__(self):

@@ -7,11 +7,11 @@ Created on Sep 17, 2015
 '''
 
 import sys
-from copy import copy
+from exceptions import IndexError
 
 class Array(object):
     
-    def __init__(self, baseidex = 0, length = 0):
+    def __init__(self, length = 0, baseidex = 0):
         assert length >= 0
         self._data = [None for i in xrange(length)]
         self._baseindex = baseidex
@@ -47,7 +47,7 @@ class Array(object):
         self._baseindex = index
         
     baseindex = property(fget = lambda self: self.getbaseindex(),
-                         sget = lambda self, value: self.setbaseindex(value))
+                         fset = lambda self, value: self.setbaseindex(value))
     
     def __len__(self):
         return len(self._data)
@@ -65,7 +65,7 @@ class Array(object):
     
     def __str__(self):
         return "Array {baseIndex = %d, data = %s}" % (
-            self._baseIndex, str(self._data))
+            self._baseindex, str(self._data))
     
     
     

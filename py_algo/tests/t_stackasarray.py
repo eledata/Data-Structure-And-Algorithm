@@ -9,13 +9,13 @@ Created on Sep 17, 2015
 import unittest
 from unittest import TestCase
 
-from py_algo.stackaslinkedlist import StackAsLinkedList
+from py_algo.stackasarray import StackAsArray
 from py_algo.visitor import Visitor
 
 class T_StackAsLinkedList(TestCase):
     
     def test(self):
-        sall = StackAsLinkedList()
+        sall = StackAsArray(10)
         
         for i in xrange(10):
             if not sall.isfull:

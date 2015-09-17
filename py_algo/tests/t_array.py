@@ -7,8 +7,8 @@ Created on Sep 17, 2015
 '''
 import unittest
 from unittest import TestCase
-
-from array import Array
+from copy import copy
+from py_algo.array import Array
 
 class T_Array(TestCase):
     def test(self):
@@ -17,4 +17,17 @@ class T_Array(TestCase):
         a[1] = 2
         
         print a[0]
+        print a.length
+        print a.baseindex
+        print a.data
+        print a
+        a.length = 10
+        print a.length
+        print a
         
+        b = Array(2, 10)
+        b[10] = 57
+        
+        c = Array(10)
+        d = copy(c)
+        print d

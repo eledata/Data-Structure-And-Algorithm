@@ -6,7 +6,7 @@ Created on Sep 15, 2015
 @author: mhuang1
 '''
 import sys
-from exception import *
+from py_algo.exception import *
 
 class LinkedList(object):
     

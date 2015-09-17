@@ -7,8 +7,8 @@ Created on Sep 15, 2015
 '''
 
 import sys
-from abstractmethod import abstractmethod
-from metaclass import Metaclass
+from py_algo.abstractmethod import abstractmethod
+from py_algo.metaclass import Metaclass
 
 class Object(object):
     

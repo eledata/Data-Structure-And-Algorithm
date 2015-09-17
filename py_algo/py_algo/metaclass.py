@@ -10,7 +10,7 @@ import sys
 import sets
 import string
 
-from abstractmethod import abstractmethod
+from py_algo.abstractmethod import abstractmethod
 
 class Metaclass(type):
     

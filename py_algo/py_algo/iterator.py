@@ -7,9 +7,9 @@ Created on Sep 16, 2015
 '''
 import sys
 
-from Object import Object
-from abstractmethod import abstractmethod
-from exception import MethodNotImplemented
+from py_algo.object import Object
+from py_algo.abstractmethod import abstractmethod
+from py_algo.exception import MethodNotImplemented
 
 class Iterator(Object):
     
