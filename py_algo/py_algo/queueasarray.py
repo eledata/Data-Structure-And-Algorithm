@@ -61,7 +61,7 @@ class QueueAsArray(Queue):
         return result
     
     def accept(self, visitor):
-        assert(visitor, Visitor)
+        assert isinstance(visitor, Visitor)
         pos = self._head
         for i in xrange(self._count):
             visitor.visit(self._array[pos])
@@ -74,15 +74,18 @@ class QueueAsArray(Queue):
     class Iterator(Iterator):
         def __init__(self, queue):
             super(QueueAsArray.Iterator, self).__init__(queue)
-            self._position = self._head
+            self._position = self._container._head
             
         def next(self):
-            pos = self._head
-            for i in xrange(self._count):
-                self._array[pos]
-                pos = pos + 1
-                if ++pos == len(self._array):
-                    pos = 0
+            self._position = self._position + 1
+            if self._position == self._container._count:
+                self._position = -1
+                raise StopIteration
+            return self._container._array[
+                (self._container._head + self._position)
+                % len(self._container._array)]
+            
+            
 
     def __iter__(self):
         return self.Iterator(self)

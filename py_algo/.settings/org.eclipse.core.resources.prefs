@@ -16,5 +16,7 @@ encoding//py_algo/stackaslinkedlist.py=utf-8
 encoding//py_algo/visitor.py=utf-8
 encoding//tests/t_array.py=utf-8
 encoding//tests/t_linkedlist.py=utf-8
+encoding//tests/t_queueasarray.py=utf-8
+encoding//tests/t_queueaslinkedlist.py=utf-8
 encoding//tests/t_stackasarray.py=utf-8
 encoding//tests/t_stacklaslinkedlist.py=utf-8
