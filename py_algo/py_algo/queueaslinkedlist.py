@@ -57,13 +57,13 @@ class QueueAsLinkedList(Queue):
     class Iterator(Iterator):
         def __init__(self, queue):
             super(QueueAsLinkedList.Iterator, self).__init__(queue)
-            self._position = None
+            self._position = queue._list.head
             
         def next(self):
-            element = self._container._position
-            self._container._position = self._container._position.next
             if self._position is None:
                 raise StopIteration
+            element = self._position
+            self._position = self._position.next
             return element.data
 
     def __iter__(self):
