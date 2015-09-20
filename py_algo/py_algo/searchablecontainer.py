@@ -20,7 +20,7 @@ class SearchableContainer(Container):
     def __contains__(self, obj): pass
     
     @abstractmethod
-    def inser(self, obj): pass
+    def insert(self, obj): pass
     
     @abstractmethod
     def withdraw(self, obj): pass

@@ -14,7 +14,7 @@ from py_algo.exception import *
 class Cursor(Object):
     
     def __init__(self, list):
-        super(Cursor, self).__init()
+        super(Cursor, self).__init__()
         self._list = list
         
     @abstractmethod

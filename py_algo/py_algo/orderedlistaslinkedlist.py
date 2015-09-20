@@ -10,59 +10,56 @@ import sys
 import  exceptions
 
 from py_algo.orderedlist import OrderedList
-from py_algo.array import Array
+from py_algo.linkedlist import LinkedList
 from py_algo.cursor import Cursor
 from py_algo.iterator import Iterator
 from py_algo.visitor import Visitor
 from py_algo.exception import *
 
-class  OrderedListAsArray(OrderedList):
+class  OrderedListAsLinkedList(LinkedList):
     
-    def __init__(self, size = 0):
-        super(OrderedListAsArray, self).__init__()
-        self._array = Array(size)
+    def __init__(self):
+        super(OrderedListAsLinkedList, self).__init__()
+        self._list = LinkedList()
         
     def insert(self, obj):
-        if self._count > len(self._array): raise ContainerFull
-        self._array[self._count] = obj
+        self._list.append(obj)
         self._count += 1
         
     def purge(self):
-        while self._count > 0:
-            self._array[self._count] = None
-            self._count -= 1
-            
-    def getisfull(self):
-        return self._count == len(self._array)
+        self._list.purge()
+        self._count = 0
     
     def accept(self, visitor):
         assert isinstance(visitor, Visitor)
-        for i in xrange(self._count):
-            visitor.visit(self._array[i])
-            if visitor.isdone:
-                return
+        pre = self._list.head
+        while pre is not None:
+            visitor.visit(pre)
+            if visitor.isdone: return
+            pre = pre.next
+            
     
     def __contains__(self, obj):
-        for i in xrange(self._count):
-            if self._array[i]== obj: return True
+        pre = self._list.head
+        while pre is not None:
+            if pre.data == obj: return True
+            pre = pre.next
         return False
     
     def find(self, obj):
-        for i in xrange(self._count):
-            if self._array[i]== obj: return i
-        return None
+        pre = self._list.head
+        while pre is not None:
+            if pre.data == obj: return True
+            pre = pre.next
+        return False
     
     def withdraw(self, obj):
-        if self._count == 0: raise ContainerEmpty
-        i = 0
-        while i < self._count and self._array[i] is not obj:
-            i += 1
-        if i == self._count:
-            raise KeyError
-        while i < self._count - 1:
-            self._array[i] = self._array[i + 1]
-            i += 1
-        self._array[i] = None
+        target = self._list.head
+        pre = None
+        while target is not None and target.data is not obj:
+            pre = target
+            target = target.next
+        
         self._count -= 1
         
     def findposition(self, obj):
