@@ -17,7 +17,7 @@ class LinkedList(object):
     def purge(self):
         self._head = None
         self._tail = None
-    
+
     def gettail(self):
         return self._tail
     

@@ -27,6 +27,7 @@ encoding//tests/t_dequeasarray.py=utf-8
 encoding//tests/t_dequeaslinkedlist.py=utf-8
 encoding//tests/t_linkedlist.py=utf-8
 encoding//tests/t_orderedlistasarray.py=utf-8
+encoding//tests/t_orderlistaslinkedlist.py=utf-8
 encoding//tests/t_queueasarray.py=utf-8
 encoding//tests/t_queueaslinkedlist.py=utf-8
 encoding//tests/t_stackasarray.py=utf-8

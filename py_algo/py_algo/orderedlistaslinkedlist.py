@@ -16,23 +16,23 @@ from py_algo.iterator import Iterator
 from py_algo.visitor import Visitor
 from py_algo.exception import *
 
-class  OrderedListAsLinkedList(LinkedList):
+class  OrderedListAsLinkedList(OrderedList):
     
     def __init__(self):
         super(OrderedListAsLinkedList, self).__init__()
-        self._list = LinkedList()
+        self._linkedlist = LinkedList()
         
     def insert(self, obj):
-        self._list.append(obj)
+        self._linkedlist.append(obj)
         self._count += 1
         
     def purge(self):
-        self._list.purge()
+        self._linkedlist.purge()
         self._count = 0
     
     def accept(self, visitor):
         assert isinstance(visitor, Visitor)
-        pre = self._list.head
+        pre = self._linkedlist.head
         while pre is not None:
             visitor.visit(pre)
             if visitor.isdone: return
@@ -40,21 +40,21 @@ class  OrderedListAsLinkedList(LinkedList):
             
     
     def __contains__(self, obj):
-        pre = self._list.head
+        pre = self._linkedlist.head
         while pre is not None:
             if pre.data == obj: return True
             pre = pre.next
         return False
     
     def find(self, obj):
-        pre = self._list.head
+        pre = self._linkedlist.head
         while pre is not None:
             if pre.data == obj: return True
             pre = pre.next
         return False
     
     def withdraw(self, obj):
-        target = self._list.head
+        target = self._linkedlist.head
         pre = None
         while target is not None and target.data is not obj:
             pre = target
@@ -63,7 +63,7 @@ class  OrderedListAsLinkedList(LinkedList):
         self._count -= 1
         
     def findposition(self, obj):
-        pre = self._list.head
+        pre = self._linkedlist.head
         while pre.data is not obj:
             pre = pre.next
         return self.Cursor(self, pre)      
@@ -71,72 +71,58 @@ class  OrderedListAsLinkedList(LinkedList):
     def __getitem__(self, offset):
         if offset < 0 or offset >= self._count:
             raise IndexError
-        return self._array[offset]
-        
+        i = 0
+        pre = self._linkedlist.head
+        while i < offset and pre is not None:
+            pre = pre.next
+            i += 1
+        return pre.data
+ 
+    def __str__(self):
+        string = "ordered list as linked list {"
+        ptr = self._linkedlist.head
+        while ptr is not None:
+            string = string + str(ptr._data)
+            if ptr._next is not None:
+                string = string + ", "
+            ptr = ptr._next
+        string = string + "}"
+        return string    
+           
     class Cursor(Cursor):
-        def __init__(self, list):
+        def __init__(self, list, element):
             super(OrderedListAsLinkedList.Cursor, self).__init__(list)
+            self._element = element
             
         def getdata(self):
-            if self._offset <0 or self._offset >= self._list._count:
-                raise IndexError
-            return self._list._array[self._offset]
+            return self._element.data
         
         def insertafter(self, obj):
-            if self._offset <0 or self._offset >= self._list._count:
-                raise IndexError
-            
-            if self._list._count == len(self._list._array):
-                raise ContainerFull
-            insertpos = self._offset + 1
-            i = self._list._count
-            while i > insertpos:
-                self._list._array[i] = self._list._array[i - 1]
-                i -=1
-            self._list._array[insertpos] = obj
+            self._element.insertafter(obj)    
             self._list._count += 1
             
         def insertbefore(self, obj):
-            if self._offset <0 or self._offset >= self._list._count:
-                raise IndexError
-            
-            if self._list._count == len(self._list._array):
-                raise ContainerFull
-            insertpos = self._offset
-            i = self._list._count
-            while i > insertpos:
-                self._list._array[i] = self._list._array[i - 1]
-                i -=1
-            self._list._array[insertpos] = obj
+            self._element.insertbefore(obj)
             self._list._count += 1                
-            self._offset += 1
     
         def withdraw(self):
-            if self._offset <0 or self._offset >= self._list._count:
-                raise IndexError
-            
-            if self._list._count < 0:
-                raise ContainerEmpty
-            
-            i = self._offset
-            while i < self._list._count - 1:
-                self._list._array[i] = self._list._array[i + 1]
-                i +=1
-                
-            self._list._array[i] = None
+            self._list._linkedlist.extract(self._element.data)
             self._list._count -= 1            
     
     class Iterator(Iterator):
         def __init__(self, list):
             super(OrderedListAsLinkedList.Iterator, self).__init__(list)
-            self._position = -1
+            self._element = None
             
         def next(self):
-            self._position += 1
-            if self._position == self._container._count:
-                self._position = -1
+            
+            if self._element is None:
+                self._element = self._container._linkedlist.head
+            else:
+                self._element = self._element.next
+            if self._element is None:
                 raise StopIteration
-            return self._container._array[self._position]
+            return self._element.data
         
     def __iter__(self):
         return self.Iterator(self)
