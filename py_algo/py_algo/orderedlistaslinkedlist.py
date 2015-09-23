@@ -63,10 +63,10 @@ class  OrderedListAsLinkedList(LinkedList):
         self._count -= 1
         
     def findposition(self, obj):
-        i = 0
-        while i < self._count and self._array[i] != obj:
-            i += 1
-        return self.Cursor(self, i)      
+        pre = self._list.head
+        while pre.data is not obj:
+            pre = pre.next
+        return self.Cursor(self, pre)      
     
     def __getitem__(self, offset):
         if offset < 0 or offset >= self._count:
@@ -74,9 +74,8 @@ class  OrderedListAsLinkedList(LinkedList):
         return self._array[offset]
         
     class Cursor(Cursor):
-        def __init__(self, list, offset):
-            super(OrderedListAsArray.Cursor, self).__init__(list)
-            self._offset = offset
+        def __init__(self, list):
+            super(OrderedListAsLinkedList.Cursor, self).__init__(list)
             
         def getdata(self):
             if self._offset <0 or self._offset >= self._list._count:
@@ -129,7 +128,7 @@ class  OrderedListAsLinkedList(LinkedList):
     
     class Iterator(Iterator):
         def __init__(self, list):
-            super(OrderedListAsArray.Iterator, self).__init__(list)
+            super(OrderedListAsLinkedList.Iterator, self).__init__(list)
             self._position = -1
             
         def next(self):
