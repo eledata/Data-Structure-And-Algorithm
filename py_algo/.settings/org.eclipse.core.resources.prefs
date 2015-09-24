@@ -18,6 +18,7 @@ encoding//py_algo/queue.py=utf-8
 encoding//py_algo/queueasarray.py=utf-8
 encoding//py_algo/queueaslinkedlist.py=utf-8
 encoding//py_algo/searchablecontainer.py=utf-8
+encoding//py_algo/set.py=utf-8
 encoding//py_algo/stack.py=utf-8
 encoding//py_algo/stackasarray.py=utf-8
 encoding//py_algo/stackaslinkedlist.py=utf-8

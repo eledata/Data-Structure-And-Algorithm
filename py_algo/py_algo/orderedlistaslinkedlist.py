@@ -54,12 +54,9 @@ class  OrderedListAsLinkedList(OrderedList):
         return False
     
     def withdraw(self, obj):
-        target = self._linkedlist.head
-        pre = None
-        while target is not None and target.data is not obj:
-            pre = target
-            target = target.next
-        
+        if self._count == 0:
+            raise ContainerEmpty
+        self._linkedlist.extract(obj)
         self._count -= 1
         
     def findposition(self, obj):
