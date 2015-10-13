@@ -17,28 +17,30 @@ from py_algo.postorder import PostOrder
 class T_Array(TestCase):
     def test(self):
         visitor = PrintVisitor()
-        bt = BinaryTree(5)
-        bt.attachleft(BinaryTree(2))
-        bt.attachright(BinaryTree(6))
-        print BinaryTree
-        print "Breadth-First traversal"
-        bt.breadthfirsttraversal(visitor)
-        visitor.finish()
-        print "Preorder traversal"
-        bt.depthfirsttraversal(PreOrder(visitor))
-        visitor.finish()
-        print "Inorder traversal"
-        bt.depthfirsttraversal(InOrder(visitor))
-        visitor.finish()
-        print "Postorder traversal"
-        bt.depthfirsttraversal(PostOrder(visitor))
-        visitor.finish()
-        print "Using iterator"
-        for i in BinaryTree:
-            print i
-        print "Using depth-first generator (preorder)"
-        for i in bt.depthfirstgenerator(bt.PREORDER):
-            print i
-        print "Using breadth-first generator"
-        for i in bt.depthfirstgenerator():
-            print i
+        
+        bt = BinaryTree(1)
+        print bt.getsubtree(0).degree
+#        print bt.getright()
+#         bt.attachright(BinaryTree(6))
+#         print BinaryTree
+#         print "Breadth-First traversal"
+#         bt.breadthfirsttraversal(visitor)
+#         visitor.finish()
+#         print "Preorder traversal"
+#         bt.depthfirsttraversal(PreOrder(visitor))
+#         visitor.finish()
+#         print "Inorder traversal"
+#         bt.depthfirsttraversal(InOrder(visitor))
+#         visitor.finish()
+#         print "Postorder traversal"
+#         bt.depthfirsttraversal(PostOrder(visitor))
+#         visitor.finish()
+#         print "Using iterator"
+#         for i in BinaryTree:
+#             print i
+#         print "Using depth-first generator (preorder)"
+#         for i in bt.depthfirstgenerator(bt.PREORDER):
+#             print i
+#         print "Using breadth-first generator"
+#         for i in bt.depthfirstgenerator():
+#             print i

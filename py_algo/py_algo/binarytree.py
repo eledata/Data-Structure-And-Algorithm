@@ -8,14 +8,24 @@ Created on 2015年10月11日
 
 import sys
 from py_algo.tree import Tree
+from py_algo.queueaslinkedlist import QueueAsLinkedList
+from py_algo.stackaslinkedlist import StackAsLinkedList
 from py_algo.prepostvisitor import PrePostVisitor
+from py_algo.preorder import PreOrder
+from py_algo.inorder import InOrder
+from py_algo.postorder import PostOrder
+from py_algo.iterator import Iterator
+from py_algo.visitor import Visitor
+from py_algo.printvisitor import PrintVisitor
+
 from py_algo.exception import *
 
 class BinaryTree(Tree):
     
     def __init__(self, *args):
-        super(BinaryTree, self).__init()
-        if len(args) == 1:
+        super(BinaryTree, self).__init__()
+        
+        if len(args) == 0:
             self._key = 0
             self._left = None
             self._right = None
@@ -55,6 +65,17 @@ class BinaryTree(Tree):
             return 0
         else:
             return 2
+    
+    def getheight(self):pass
+    
+    def getcount(self):
+        if self.isempty:
+            return 0
+        result = 1
+        for i in xrange(self.degree):
+            result = result + self.getsubtree(i).count
+        return result          
+   
     def getisempty(self):
         return self._key is None
     
@@ -135,7 +156,7 @@ class BinaryTree(Tree):
             if mode == self.POSTORDER:
                 yield self.key
     
-    def compareto(self, bt):
+    def _compareto(self, bt):
         assert isinstance(self, bt.__class__)
         
         if self.isempty:
@@ -153,47 +174,8 @@ class BinaryTree(Tree):
                 result = cmp(self._right, bt._right)
             return result
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    def breadthfirsttraversal(self, visitor): pass
+
+    def breadthfirstgenerator(self): pass
+
+    def accept(self, visitor): pass

@@ -10,6 +10,7 @@ import sys
 from py_algo.abstractmethod import abstractmethod
 from py_algo.object import Object
 from py_algo.visitor import Visitor
+from py_algo.exception import MethodNotImplemented
 
 class Container(Object):
     def __init__(self):
@@ -24,10 +25,12 @@ class Container(Object):
     
     def getcount(self):
         return self._count
+    
     count = property(fget = lambda self: self.getcount())
     
     def getisempty(self):
-        return self._count == 0
+        return self.count == 0
+    
     isempty = property(fget = lambda self: self.getisempty())
     
     def getisfull(self):
@@ -37,7 +40,7 @@ class Container(Object):
     def accept(self, visitor):
         assert isinstance(visitor, Visitor)
         for obj in self:
-            visitor.visitor(obj)
+            visitor.visit(obj)
     
     def elements(self):
         for obj in self:
@@ -67,5 +70,4 @@ class Container(Object):
         for obj in self:
             result = (result + hash(obj)) & sys.maxint
         return result
-    
         
