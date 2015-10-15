@@ -26,7 +26,7 @@ class BinaryTree(Tree):
         super(BinaryTree, self).__init__()
         
         if len(args) == 0:
-            self._key = 0
+            self._key = None
             self._left = None
             self._right = None
         elif len(args) == 1:
@@ -41,7 +41,7 @@ class BinaryTree(Tree):
             raise  ValueError
     
     def purge(self):
-        self._key = 0
+        self._key = None
         self._left = None
         self._right = None
         
@@ -139,7 +139,7 @@ class BinaryTree(Tree):
             visitor.previsit(self.key)
             self.left.depthfirsttraversal(visitor)
             visitor.invisit(self.key)
-            self.left.depthfirsttraversal(visitor)
+            self.right.depthfirsttraversal(visitor)
             visitor.postvisit(self.key)
 
     
@@ -178,4 +178,7 @@ class BinaryTree(Tree):
 
     def breadthfirstgenerator(self): pass
 
-    def accept(self, visitor): pass
+    #当用print打印binary tree时候，此accept函数会让container里面的str来调用。
+    def accept(self, visitor):
+        assert isinstance(visitor, Visitor)
+        self.depthfirsttraversal(PreOrder(visitor))

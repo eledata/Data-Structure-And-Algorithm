@@ -19,9 +19,9 @@ class T_Array(TestCase):
         visitor = PrintVisitor()
         
         bt = BinaryTree(1)
-        print bt.getsubtree(0).degree
-#        print bt.getright()
-#         bt.attachright(BinaryTree(6))
+        bt.attachright(BinaryTree(6))
+        bt.attachleft(BinaryTree(7))
+        print bt
 #         print BinaryTree
 #         print "Breadth-First traversal"
 #         bt.breadthfirsttraversal(visitor)
@@ -39,8 +39,8 @@ class T_Array(TestCase):
 #         for i in BinaryTree:
 #             print i
 #         print "Using depth-first generator (preorder)"
-#         for i in bt.depthfirstgenerator(bt.PREORDER):
-#             print i
+        for i in bt.depthfirstgenerator(bt.INORDER):
+            print i
 #         print "Using breadth-first generator"
 #         for i in bt.depthfirstgenerator():
 #             print i
