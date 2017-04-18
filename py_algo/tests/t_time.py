@@ -20,3 +20,6 @@ class T_Array(TestCase):
         t.stop()
         print "Elapsed time %g." % (t.getelapsedtime())
         return 0
+
+a = T_Array()
+a.test()

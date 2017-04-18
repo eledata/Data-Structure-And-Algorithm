@@ -31,3 +31,6 @@ class T_Array(TestCase):
         c = Array(10)
         d = copy(c)
         print d
+
+if __name__ == "__main__":
+    unittest.main()
